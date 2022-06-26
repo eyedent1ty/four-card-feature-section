@@ -10,7 +10,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Repository](https://github.com/eyedent1ty/four-card-feature-section)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Live Site URL: [Live](https://eyedent1ty-four-card-feature-section.netlify.app/)
 
 ### Built with
 
