@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// PRIMARY
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// NEUTRAL
+$dark-grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+$dark-blue: hsl(234, 12%, 34%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: Poppins;
+}
+
+.card {
+    padding: 30px 20px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 10px 0px $dark-grayish-blue;
+}
+
+// BORDER TOP
+.bt-red {
+    border-top: 4px solid $red;
+}
+
+.bt-cyan {
+    border-top: 4px solid $cyan;
+}
+
+.bt-orange {
+    border-top: 4px solid $orange;
+}
+
+.bt-blue {
+    border-top: 4px solid $blue;
+}
+
+// FONT SIZES
+
+.semi-large {
+    font-size: 1.2rem;
+}
+
+.large {
+    font-size: 1.4rem;
+}
+
+// FONT COLORS
+
+.dark-grayish-blue {
+    color: $dark-grayish-blue;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+// FONT WEIGHT
+
+.light {
+    font-weight: 200;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+// MARGIN
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+// PADDING
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+// LINE HEIGHT
+.lh-1-8 {
+    line-height: 1.8;
+}
+
+///////////////////////////////////////////////////////////////////////
+.container {
+    margin: 100px auto;
+    width: 80%;
+
+    .container__header {
+        text-align: center;
+    }
+
+    .wrapper {
+        .card {
+            .img-container {
+                display: flex;
+                justify-content: flex-end;
+                .img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+
+        .supervisor .img {
+            background: center / cover no-repeat
+                url('images/icon-supervisor.svg');
+        }
+
+        .team-builder .img {
+            background: center / cover no-repeat
+                url('images/icon-team-builder.svg');
+        }
+
+        .karma .img {
+            background: center / cover no-repeat url('images/icon-karma.svg');
+        }
+
+        .calculator .img {
+            background: center / cover no-repeat
+                url('images/icon-calculator.svg');
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        .container__header {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px;
+
+        section {
+            max-height: 240px;
+            margin: 0;
+        }
+
+        .supervisor,
+        .calculator {
+            margin: auto 0;
+        }
+
+        .container__team-builder-karma section:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}

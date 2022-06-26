@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+.card {
+  padding: 30px 20px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 10px 0px hsl(229deg, 6%, 66%);
+}
+
+.bt-red {
+  border-top: 4px solid hsl(0deg, 78%, 62%);
+}
+
+.bt-cyan {
+  border-top: 4px solid hsl(180deg, 62%, 55%);
+}
+
+.bt-orange {
+  border-top: 4px solid hsl(34deg, 97%, 64%);
+}
+
+.bt-blue {
+  border-top: 4px solid hsl(212deg, 86%, 64%);
+}
+
+.semi-large {
+  font-size: 1.2rem;
+}
+
+.large {
+  font-size: 1.4rem;
+}
+
+.dark-grayish-blue {
+  color: hsl(229deg, 6%, 66%);
+}
+
+.dark-blue {
+  color: hsl(234deg, 12%, 34%);
+}
+
+.light {
+  font-weight: 200;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.lh-1-8 {
+  line-height: 1.8;
+}
+
+.container {
+  margin: 100px auto;
+  width: 80%;
+}
+.container .container__header {
+  text-align: center;
+}
+.container .wrapper .card .img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .wrapper .card .img-container .img {
+  width: 64px;
+  height: 64px;
+}
+.container .wrapper .supervisor .img {
+  background: center/cover no-repeat url("images/icon-supervisor.svg");
+}
+.container .wrapper .team-builder .img {
+  background: center/cover no-repeat url("images/icon-team-builder.svg");
+}
+.container .wrapper .karma .img {
+  background: center/cover no-repeat url("images/icon-karma.svg");
+}
+.container .wrapper .calculator .img {
+  background: center/cover no-repeat url("images/icon-calculator.svg");
+}
+
+@media (min-width: 1440px) {
+  .container .container__header {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper section {
+    max-height: 240px;
+    margin: 0;
+  }
+  .wrapper .supervisor, .wrapper .calculator {
+    margin: auto 0;
+  }
+  .wrapper .container__team-builder-karma section:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
